@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyecto 20%</title>
+        <link rel="stylesheet" href="./styles.css">
+        
+      
+    </head>
+    <body>
+
+        <!-- Contenedor principal con fondo minimalista -->
+        <div class="container">
+            <center>
+                <img alt="JavaScript" src="img/JS2.png" width="650px" height="300px">
+            </center>
+            
+            <h3>¿Qué es JavaScript?</h3>
+            <p>JavaScript es un lenguaje de programación que los desarrolladores utilizan para hacer páginas web interactivas. Desde actualizar fuentes de redes sociales hasta mostrar animaciones y mapas interactivos, las funciones de JavaScript pueden mejorar la experiencia del usuario de un sitio web. Como lenguaje de scripting del lado del servidor, se trata de una de las principales tecnologías de la World Wide Web<strong>.</strong></p>
+            
+            <h3>¿Para qué se utiliza JavaScript?</h3>
+            <p>Anteriormente, las páginas web eran estáticas, similares a las páginas de un libro. Una página estática mostraba principalmente información en un diseño fijo y no todo aquello que esperamos de un sitio web moderno. JavaScript surgió como una tecnología del lado del navegador para hacer que las aplicaciones web fueran más dinámicas. Por medio de JavaScript, los navegadores eran capaces de responder a la interacción de los usuarios y cambiar la distribución del contenido en la página web<strong>.</strong></p>
+            <p>A medida que el lenguaje evolucionó, los desarrolladores de JavaScript establecieron bibliotecas, marcos y prácticas de programación y comenzaron a utilizarlo fuera de los navegadores web. En la actualidad, puede utilizar JavaScript para el desarrollo tanto del lado del cliente como del lado del servidor<strong>.</strong></p>
+            
+            <h3>Tipos de Datos</h3>
+            <p>JavaScript tiene tipos de datos primitivos como<strong>:</strong></p>
+            <ul>
+                <li><strong>String:</strong> Es un tipo de dato que se utiliza para representar texto. Es una cadena de caracteres rodeada por comillas simples ('), comillas dobles (") o comillas invertidas (`).</li>
+                <img class = "imagen1" alt="Tipos de datos1" src="img/imagen1.png">
+                <li><strong>Number:</strong> Se utiliza para representar valores numéricos. Los valores de tipo Number pueden ser enteros o números en coma flotante (decimales).</li>
+                <img class = "imagen2" alt="Tipos de datos2" src="img/imagen2.png" width="550px" height="170px">
+                <li><strong>Boolean:</strong> Representa uno de dos valores: true o false.</li>
+                <img class = "imagen3" alt="Tipos de datos3" src="img/imagen3.png" width="450px" height="170px">
+                <li><strong>Undefined:</strong> Es un valor que se asigna automáticamente a una variable que ha sido declarada pero no inicializada.</li>
+                <li><strong>Null:</strong> Es un valor que representa la ausencia intencional de cualquier objeto o valor.</li>
+                <img class = "imagen4" alt="Tipos de datos4" src="img/imagen4.png" width="450px" height="300px">
+                <li><strong>Symbol:</strong> Son identificadores únicos que se utilizan principalmente para evitar conflictos de nombres en las propiedades de los objetos.</li>
+                <img class = "imagen5" alt="Tipos de datos5" src="img/imagen5.png" width="450px" height="300px">
+                <li><strong>BigInt:</strong> Es un tipo de dato en JavaScript introducido en ECMAScript 2020 que permite representar y trabajar con números enteros de tamaño arbitrario.</li>
+                <img class = "imagen6" alt="Tipos de datos6" src="img/imagen6.png" width="650px" height="250px">
+            </ul>
+            </br>
+
+            <p>Y tipos complejos como<strong>:</strong></p>
+            <ul>
+                <li><strong>Object:</strong> Es uno de los tipos de datos fundamentales y se utiliza para almacenar colecciones de datos y entidades más complejas.</li>
+                <img class = "imagen7" alt="Tipos de datos7" src="img/imagen7.png" width="450px" height="150px">
+            </ul>
+
+            <h3>Variables</h3>
+            <p>Se pueden declarar con <strong>var</strong>, <strong>let</strong> y <strong>const.</strong></p>  
+            <ul>
+                <li><strong>var:</strong> Antes de ES6 la única forma de crear variables en JavaScript era con la palabra var y su alcance era global o de función.</li>
+                <img class = "decla1" alt="declaracion de variables" src="img/var.png">
+                <li><strong>let:</strong> Te permite declarar variables limitando su alcance (scope) al bloque, declaración, o expresión donde se está usando.a diferencia de la palabra clave var la cual define una variable global o local en una función sin importar el ámbito del bloque.</li>
+                <img class = "decla2" alt="declaracion de variables2" src="img/imagen8.png">
+                <li><strong>const:</strong> Esta declaración crea una constante cuyo alcance puede ser global o local para el bloque en el que se declara y no puede ser reasignada.</li>
+                <img class = "decla3" alt="declaracion de variables3" src="img/imagen9.png">
+            </ul>
+
+            <h3>Funciones</h3>
+            <p>Las funciones son bloques de código reutilizables. Pueden ser declarativas o anónimas. JavaScript también tiene funciones de orden superior, como las utilizadas en los métodos de los <strong>arrays</strong> (map, filter, etc.).</p>
+            <p><strong>Funciones Declarativas:</strong> Se definen utilizando la palabra clave function seguida del nombre de la función, parámetros entre paréntesis y el cuerpo de la función entre llaves. Por ejemplo:</p>
+            <img class = "funciones1" alt="funciones1" src="img/funcion1.png">
+            <p><strong>Funciones Anónimas:</strong> No tienen un nombre explícito y se suelen utilizar como funciones de callback. Pueden ser asignadas a variables:</p>
+            <img class = "funciones2" alt="funciones2" src="img/funcion2.png">
+            <p><strong>Funciones de Flecha:</strong> Son una sintaxis más compacta para definir funciones anónimas. No tienen su propio this y son muy útiles en los métodos de arrays:</p>
+            <img class = "funciones3" alt="funciones3" src="img/funcion3.png">
+            <p>Además, las funciones de orden superior son aquellas que pueden recibir otras funciones como argumentos o devolver funciones como resultado. Métodos como map, filter y reduce son ejemplos clásicos de funciones de orden superior que facilitan el trabajo con arrays:</p>
+            <ul>
+                <li><strong>map:</strong> Aplica una función a cada elemento de un array y retorna un nuevo array con los resultados.</li>
+                <img class = "funciones4" alt="funciones4" src="img/funcion4.png">
+                <li><strong>filter:</strong> Filtra los elementos de un array basado en una condición y retorna un nuevo array con los elementos que cumplen dicha condición.</li>
+                <img class = "funciones5" alt="funciones5" src="img/funcion5.png">
+                <li><strong>reduce:</strong> Reduce un array a un único valor aplicando una función de acumulación.</li>
+                <img class = "funciones6" alt="funciones6" src="img/funcion6.png">
+            </ul>
+          
+            <h3>Objetos y Arrays</h3>
+            <ul>
+                <li><strong>Objetos:</strong> Los objetos son estructuras que permiten almacenar múltiples valores en una sola entidad. Estos valores se guardan como pares clave-valor, donde las claves son únicas dentro del objeto.</li>
+                <img class = "objeto1" alt="objeto1" src="img/objeto.png">
+                <li><strong>Arrays:</strong> Son listas ordenadas de elementos, y cada elemento se encuentra en una posición (índice) específica. Los índices en un array comienzan en 0.</li>
+                <img class = "array1" alt="array" src="img/array.png">
+            </ul>
+            <p>Los objetos y los arrays pueden ser combinados y anidados para crear estructuras de datos más complejas. Por ejemplo, un array de objetos:</p>
+            <img class = "array2" alt="array2" src="img/array2.png">
+
+            <h3>Asincronía</h3>
+            <p>JavaScript maneja operaciones asincrónicas con callbacks, promesas y async/await, lo que permite manejar tareas como llamadas a APIs sin bloquear la ejecución del código.</p>
+            <p><strong>Callbacks:</strong>
+                Los callbacks son funciones que se pasan como argumentos a otras funciones y se ejecutan después de que la operación asincrónica haya terminado.</p>
+            
+            <p><strong>Promesas:</strong>
+                Las promesas son objetos que representan el resultado de una operación asincrónica y pueden ser resueltas o rechazadas.</p>
+            
+            <p><strong>Async/Await:</strong>
+                Son una sintaxis más reciente y conveniente para trabajar con promesas. Permiten escribir código asincrónico de manera más clara y legible.</p>
+                <h3>DOM (Document Object Model)</h3>
+            <p>Es una representación en árbol de los elementos HTML de una página web, y JavaScript permite interactuar con el DOM para modificar el contenido dinámicamente (añadir, eliminar o cambiar elementos).</p>
+
+            <h3>Eventos</h3>
+            <p>JavaScript permite gestionar eventos (como clics o teclas presionadas) para hacer que las páginas web sean interactivas, mediante el uso de event listeners.</p>
+            <p>Eventos Comunes</p>
+            <keydown:>
+            <li><strong>click:</strong> Cuando se hace clic en un elemento.</li>
+            <li><strong>mouseover:</strong> Cuando el ratón pasa sobre un elemento.</li>
+            <li><strong>mouseout:</strong> Cuando el ratón sale de un elemento.</li>
+            <li><strong>keydown:</strong> Cuando se presiona una tecla.</li>    
+            <li><strong>keyup:</strong> Cuando se libera una tecla.</li>
+            <li><strong>submit:</strong> Cuando se envía un formulario.</li>
+            </ul>
+            <h3>ES6 y Nuevas Características</h3>
+            <p>ECMAScript 6 (ES6) introdujo nuevas características como:</p>
+            <ul>
+                <li>Clases para la programación orientada a objetos.</li>
+                <li>Funciones flecha (&#8594;).</li>
+                <li>Template literals para concatenación de cadenas de texto.</li>
+                <li>Desestructuración de objetos y arrays.</li>
+                <li>Módulos para dividir el código en archivos.</li>
+            </ul>
+
+            <h3>Programación Orientada a Objetos (OOP)</h3>
+            <p>JavaScript soporta la creación de objetos y la herencia a través de prototipos. ES6 introdujo las clases para facilitar la OOP en el lenguaje.</p>
+            <p>Antes de ES6:</p>
+            <img class = "oop1" alt="oop1" src="img/opp1.png">
+            <p>Con ES6:</p>
+            <img class = "oop2" alt="oop2" src="img/opp2.png">
+            <p>La sintaxis de clase de ES6 ofrece una forma más clara y sencilla de implementar la herencia y las características de la OOP en JavaScript.</p>
+            <!-- Botón con animación de rebote -->
+            <button>
+                <a href="html2.html">Siguiente</a>
+            </button>
+        </div> <!-- Fin del contenedor -->
+
+    </body>
+</html>
